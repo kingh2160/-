@@ -38,23 +38,6 @@ using namespace std;
 typedef pair<int, int> P;
 const int MAX_V = 50;
 
-
-int N, M, K, A, B, sx, sy;
-int arr[1000][1000];
-int ans[1000][1000][10+1];
-bool visited[1000][1000][10+1];
-int dir_x[4] = { -1, 1, 0, 0 };
-int dir_y[4] = { 0, 0, -1, 1 };
-/*
-int dir_x[4] = { 0, 0, 1, -1 };
-int dir_y[4] = { 1, -1, 0, 0 };
-*/ 
-bool check( int x, int y ){
-	if( x < 0 || y < 0 || x >= N || y>=M ) return false;
-	else return true;
-}
-
-
 int main(){
     int N;
     int dp[30+1];
@@ -70,13 +53,3 @@ int main(){
     cout << dp[N];
     return 0;
 }
-
-
-
-
-
-
-
-
-
-
