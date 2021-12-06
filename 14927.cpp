@@ -48,17 +48,6 @@ bool check( int x, int y ){
     else return true;
 }
 
-void VIEW(){
-    printf("\n");
-    for( int i=0; i<N; ++i ){
-        for( int j=0; j<N; ++j ){
-            printf("%d ", cp[i][j]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-}
-
 void TOGGLE( int x, int y ){
     cp[x][y] ^= 1;
     if( check(x-1, y) ) cp[x-1][y] ^= 1;
@@ -102,5 +91,5 @@ int main(){
     }
     if( ans == INF ) printf("-1");
     else printf("%d", ans);
-		return 0;
+    return 0;
 }
